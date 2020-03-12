@@ -6,6 +6,7 @@ __pycache__
 local_settings.py
 media/*
 
+
 rest_framework_swagger/
 admin/
 .pytest_cache/*
