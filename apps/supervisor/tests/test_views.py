@@ -13,7 +13,6 @@ class TestLoadAverage:
         url = reverse('supervisor:load-average')
         resp = client.get(url)
         assert resp.status_code == 302
-        # print(resp.headers)
 
 
 class TestRam:
