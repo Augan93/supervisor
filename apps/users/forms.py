@@ -7,6 +7,8 @@ class LoginForm(forms.Form):
         widget=forms.TextInput(
             attrs={
                 'placeholder': 'Логин...',
+                'class': 'form-control',
+                'id': 'exampleInputLogin'
             }
         )
     )
@@ -15,6 +17,8 @@ class LoginForm(forms.Form):
         widget=forms.PasswordInput(
             attrs={
                 'placeholder': 'Пароль...',
+                'class': 'form-control',
+                'id': 'exampleInputPassword'
             }
         ),
     )

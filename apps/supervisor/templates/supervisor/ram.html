@@ -3,9 +3,25 @@
 {% block title %}RAM{% endblock %}
 
 {% block content %}
-    <h2>RAM</h2>
-    <p>Total: {{ total }}</p>
-    <p>Used: {{ used }}</p>
-    <p>Free: {{ free }}</p>
-    <p>Used percent: {{ used_percent }} %</p>
+    <h2 class="mb-4 mt-4">RAM</h2>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Total</th>
+            <td>{{ total }}</td>
+        </tr>
+        <tr>
+            <th>Used</th>
+            <td>{{ used }}</td>
+        </tr>
+        <tr>
+            <th>Free</th>
+            <td>{{ free }}</td>
+        </tr>
+        <tr>
+            <th>Used percent</th>
+            <td>{{ used_percent }} %</td>
+        </tr>
+    </table>
+
 {% endblock %}

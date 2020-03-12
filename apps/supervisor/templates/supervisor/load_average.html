@@ -3,8 +3,20 @@
 {% block title %}Load Average{% endblock %}
 
 {% block content %}
-    <h2>Load Average</h2>
-    <p>1 min: {{ load1 }} </p>
-    <p>5 min: {{ load5 }} </p>
-    <p>15 min: {{ load15 }} </p>
+    <h2 class="mb-4 mt-4">Load Average</h2>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>1 min</th>
+            <td>{{ load1 }}</td>
+        </tr>
+        <tr>
+            <th>5 min</th>
+            <td>{{ load5 }}</td>
+        </tr>
+        <tr>
+            <th>15 min</th>
+            <td>{{ load15 }}</td>
+        </tr>
+    </table>
 {% endblock %}
